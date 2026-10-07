@@ -21,7 +21,7 @@ The application retrieves exchange rate data from the Frankfurter API and allows
 
 ### Historical Exchange Rate
 
-![Historical Exchange Rate](images/historical-rate.png)
+![Historical Exchange Rate](images/historical-rate.PNG)
 
 ## Technologies Used
 
@@ -46,8 +46,9 @@ fx-currency-converter/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
-## How it work
+## How It Work
 The application follows a simple workflow:
 1. The user enters an amount to convert.
 2. The user selects the source currency.
@@ -56,57 +57,31 @@ The application follows a simple workflow:
 5. The converted amount and inverse exchange rate are calculated.
 6. The result is displayed through the Streamlit interface.
 Users can also select a date to retrieve a historical exchange rate.
-Code Overview
-app.py
+
+## Code Overview
+
+### `app.py`
+
 Contains the Streamlit user interface and handles user interactions such as:
+
 - Entering an amount
 - Selecting currencies
 - Requesting the latest exchange rate
 - Selecting a historical date
 - Displaying conversion results
-api.py
+
+### `api.py`
+
 Handles HTTP requests to the Frankfurter API.
-frankfurter.py
+
+### `frankfurter.py`
+
 Contains functions for retrieving:
+
 - Available currencies
 - Latest exchange rates
 - Historical exchange rates
-currency.py
+
+### `currency.py`
+
 Calculates the converted amount and inverse exchange rate and formats the final result.
-Installation
-Clone the repository:
-git clone https://github.com/thanhnguyenvn6879/fx-currency-converter.git
-
-Move into the project directory:
-cd fx-currency-converter
-
-Install the required packages:
-python -m pip install -r requirements.txt
-
-Run the Application
-Start the Streamlit application:
-python -m streamlit run app.py
-
-The application will normally open in your browser at:
-http://localhost:8501
-
-Data Source
-Exchange rate data is retrieved from the Frankfurter API.
-Frankfurter provides current and historical foreign exchange rate data.
-https://www.frankfurter.app/
-Example
-For example, a user can enter:
-Amount: 100
-From: AUD
-To: CAD
-
-The application retrieves the latest AUD/CAD exchange rate and displays:
-- The exchange rate
-- The converted amount
-- The inverse exchange rate
-Purpose
-This project demonstrates the use of Python for:
-- Consuming data from a REST API
-- Organising code into reusable modules
-- Processing and formatting API responses
-- Building an interactive web application with Streamlit
