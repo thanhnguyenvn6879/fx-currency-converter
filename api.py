@@ -13,10 +13,3 @@ def get_data_from_api(endpoint):
     url = f"https://api.frankfurter.app/{endpoint}"
     response = requests.get(url)
     return response.json()
-
-link = "https://api.frankfurter.app"
-P_link = requests.get(link)
-print(P_link)
-
-currencies = get_data_from_api("currencies")
-print(currencies)
