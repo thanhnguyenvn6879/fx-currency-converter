@@ -6,7 +6,7 @@ from datetime import datetime
 # Title
 st.title("FX Converter")
 
-# Select amount of moneymoney
+# Enter amount to convert
 amount = st.number_input("Enter the amount to be converted:", min_value=0.00, value=50.0)
 currencies = get_currencies()
 
