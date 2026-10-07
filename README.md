@@ -17,7 +17,7 @@ The application retrieves exchange rate data from the Frankfurter API and allows
 
 ### Latest Exchange Rate
 
-![Latest Exchange Rate](images/latest-rate.png)
+![Latest Exchange Rate](images/test-rate.png)
 
 ### Historical Exchange Rate
 
@@ -47,7 +47,7 @@ fx-currency-converter/
 ├── .gitignore
 └── README.md
 
-How It Works
+## How it work
 The application follows a simple workflow:
 1. The user enters an amount to convert.
 2. The user selects the source currency.
