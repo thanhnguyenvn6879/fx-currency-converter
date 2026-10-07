@@ -17,7 +17,7 @@ The application retrieves exchange rate data from the Frankfurter API and allows
 
 ### Latest Exchange Rate
 
-![Latest Exchange Rate](images/lastest-rate.png)
+![Latest Exchange Rate](images/lastest-rate.PNG)
 
 ### Historical Exchange Rate
 
